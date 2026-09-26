@@ -1,0 +1,33 @@
+name: sampling_reasoning
+channels:
+  - conda-forge
+  - defaults
+  - nvidia
+dependencies:
+  - python=3.10.*
+  - uv
+  - setuptools-scm
+  - ccache
+  - cmake
+  - cuda-nvcc=12.8
+  - cuda-version=12.8
+  - cuda-toolkit=12.8
+  - cuda-cudart-dev=12.8
+  - cuda-runtime=12.8
+  - gcc=14
+  - gxx=14
+  - pip
+  - pip:
+    - --extra-index-url https://download.pytorch.org/whl/cu128
+    - torch==2.7.0
+    - torchvision==0.22.0
+    - torchaudio==2.7.0
+    - numpy
+    - pandas
+    - scipy
+    - transformers<4.54.0
+    - datasets
+    - tqdm
+    - sympy
+    - pylatexenc
+    - huggingface_hub

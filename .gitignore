@@ -1,0 +1,17 @@
+# Python / editors
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.claude/
+.DS_Store
+
+# Datasets (not redistributed; see README) and run outputs
+llm_experiments/data/
+results/
+*.log
+
+# Evaluation artifacts
+mcnemar_he/
+llm_experiments/he_*.jsonl*
